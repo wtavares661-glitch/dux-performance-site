@@ -1,0 +1,28 @@
+.text-gradient {
+            background: linear-gradient(to right, #fb923c, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        /* Deixa o marquee pausável no hover e respeita quem prefere menos movimento */
+        .marquee-wrap:hover .marquee-anim {
+            animation-play-state: paused;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .marquee-anim {
+                animation: none;
+            }
+        }
