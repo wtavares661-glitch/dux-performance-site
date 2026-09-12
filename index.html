@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entregáveis · Palestra Claude Code — Cássio Prado</title>
+<meta name="description" content="Material exclusivo do Subido Ao Vivo 2026.">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style-index.css">
+</head>
+<body>
+
+<div class="mobnote">📱 Você está no celular. Este material tem bastante conteúdo — <b>recomendamos abrir no computador</b> para a melhor experiência.</div>
+
+<header>
+  <div class="nav">
+    <div class="brand">Cássio Prado</div>
+    <nav class="menu">
+      <a href="#guia">Guia</a>
+      <a href="#framework">Framework</a>
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#comercial">Skills</a>
+      <a href="#sistemas">Sistemas</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Material exclusivo · Subido Ao Vivo 2026</div>
+    <h1>Os entregáveis da palestra</h1>
+    <p class="lead">Conteúdo exclusivo do Subido Ao Vivo 2026. Aqui você tem acesso a tudo que precisa pra começar a automatizar o repetitivo na sua operação: o guia de configuração, o framework, as ferramentas e a IA sugerida.</p>
+    <div class="prazo">
+      <span class="tag">⏳ 90 DIAS</span>
+      <p><strong>Este site fica no ar por 90 dias.</strong> Priorize o seu tempo: quanto antes você usar esses recursos, antes você ganha tempo de volta na sua agenda.</p>
+    </div>
+  </div>
+</div>
+
+<!-- GUIA -->
+<section id="guia">
+  <div class="wrap">
+    <div class="step">Parte 1 · Comece por aqui</div>
+    <h2>Guia de configuração</h2>
+    <p class="sectlead">O passo a passo pra deixar tudo pronto antes de usar qualquer coisa desta página: instalar as ferramentas, conectar o Claude Code e gerar os acessos das APIs. É a parte que trava a maioria das pessoas, e o guia resolve ela do zero.</p>
+    <div class="grid g2">
+      <div class="card">
+        <span class="badge free">Acesso livre</span>
+        <div class="num">01</div>
+        <h3>Deixe seus acessos prontos</h3>
+        <p>Guia completo, escrito pra quem nunca programou: sem pular etapa, com o que fazer quando dá erro e um checklist final pra você conferir se está tudo certo.</p>
+        <a class="btn" href="guia.html" target="_blank" rel="noopener">Abrir o guia de configuração →</a>
+      </div>
+      <div class="card">
+        <h3>O que ele cobre</h3>
+        <p>Do computador zerado até o primeiro comando rodando:</p>
+        <p class="alts">
+          <b>VS Code</b> — instalação e tradução pra português.<br>
+          <b>Claude Code</b> — extensão oficial, login e a pasta de trabalho.<br>
+          <b>Meta Ads</b> — criar o aplicativo e gerar o token longo.<br>
+          <b>Google Ads</b> — MCC, Google Cloud, OAuth e Developer Token.<br>
+          <b>Arquivo <code>.env</code></b> — onde tudo se conecta, linha por linha.
+        </p>
+        <p class="alts">✅ Termina com um <b>checklist final</b> e uma seção de "travou?" pra resolver os erros mais comuns sozinho.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRAMEWORK -->
+<section id="framework" class="alt">
+  <div class="wrap">
+    <div class="step">Parte 2</div>
+    <h2>O framework</h2>
+    <p class="sectlead">A estrutura de pastas e skills que organiza tudo. Baixe, instale e adapte pro seu negócio.</p>
+    <div class="grid g2">
+      <div class="card">
+        <span class="badge free">Download gratuito</span>
+        <h3>Framework Claude PRO</h3>
+        <p>O esqueleto do "segundo cérebro" da sua operação: pastas, contexto e skills prontas pra você começar.</p>
+        <a class="btn" href="https://github.com/cassiorox/SAV2026" target="_blank" rel="noopener">Baixar no GitHub →</a>
+      </div>
+      <div class="card" style="background:transparent;box-shadow:none;justify-content:center">
+        <div class="callout" style="margin-top:0">
+          <div class="ttl">🛡️ Antes de instalar qualquer coisa</div>
+          <p>Sempre que for instalar um framework, uma skill ou qualquer arquivo de terceiros, faça duas verificações simples de segurança:</p>
+          <ol>
+            <li>Suba o arquivo (ou o .zip) no <a href="https://www.virustotal.com/" target="_blank" rel="noopener"><b>VirusTotal</b></a> — ele escaneia com dezenas de antivírus de uma vez.</li>
+            <li>Peça pro próprio Claude analisar os arquivos antes de rodar. Use o prompt abaixo.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- prompt de análise -->
+    <div class="prompt">
+      <div class="top">
+        <span>PROMPT · ANÁLISE DE SEGURANÇA</span>
+        <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+      </div>
+      <pre id="secprompt">Analise os arquivos desta pasta antes de eu instalar ou executar qualquer coisa. Não rode nada ainda.
+
+Quero que você me diga:
+1. O que cada arquivo/skill faz, em resumo.
+2. Se algum script executa comandos no sistema, instala dependências ou baixa algo da internet.
+3. Se algo acessa arquivos sensíveis (.env, chaves, tokens, credenciais).
+4. Se há código que envie dados para fora da minha máquina (requisições a URLs, webhooks, telemetria).
+5. Qualquer código ofuscado, suspeito ou que fuja do propósito declarado.
+
+Liste o que encontrar por nível de risco (alto, médio, baixo) e conclua dizendo se é seguro instalar.</pre>
+    </div>
+  </div>
+</section>
+
+<!-- FERRAMENTAS -->
+<section id="ferramentas">
+  <div class="wrap">
+    <div class="step">Parte 3 · Ferramentas</div>
+    <h2>O ambiente onde tudo acontece</h2>
+    <p class="sectlead">As ferramentas que sustentam o fluxo, da IA ao editor.</p>
+    <div class="grid g3">
+      <div class="card">
+        <span class="badge lock">Versão paga</span>
+        <h3>Wispr Flow</h3>
+        <p>Transcreve em texto o que você fala, com correção e formatação automáticas. Em vez de digitar os comandos pro Claude, você fala, e isso pode acelerar o seu trabalho em até 4x. É a que eu uso no dia a dia.</p>
+        <a class="btn" href="https://wisprflow.ai/r?CASSIO20" target="_blank" rel="noopener">Conhecer a Wispr Flow →</a>
+      </div>
+      <div class="card">
+        <span class="badge free">Gratuita</span>
+        <h3>Handy Computer</h3>
+        <p>A alternativa gratuita à Wispr Flow. Mesma ideia: você fala e ela transcreve, com menos recursos, mas sem custo.</p>
+        <p class="alts">⚠️ O site sai do ar com frequência. Se isso acontecer, baixe direto pelo GitHub.</p>
+        <a class="btn" href="https://handy.computer/" target="_blank" rel="noopener">Baixar o Handy →</a>
+        <a class="btn ghost" href="https://github.com/cjpais/Handy/releases" target="_blank" rel="noopener" style="margin-top:.7rem">Baixar pelo GitHub →</a>
+      </div>
+      <div class="card" id="ia">
+        <h3>IA sugerida: Claude</h3>
+        <p>O Claude (da Anthropic) é a IA que eu uso e recomendo pra esse fluxo, principalmente o Claude Code, que é quem executa as tarefas dentro das suas pastas.</p>
+        <p class="alts">Também funciona com outras, como o <b>Codex</b> (do ChatGPT), entre outras. A lógica de uso é parecida.</p>
+        <a class="btn" href="https://claude.ai/referral/xnKVCtkC8A" target="_blank" rel="noopener">Acessar o Claude →</a>
+      </div>
+      <div class="card">
+        <h3>VS Code</h3>
+        <p>É um editor de código gratuito da Microsoft. Na prática, é o "lugar" onde você abre as pastas do framework e conversa com o Claude pra ele executar as tarefas. Não precisa saber programar pra usar, ele só organiza tudo num só lugar.</p>
+        <p class="alts">Prefere outro? Dá pra usar alternativas como <b>Antigravity</b>, <b>Cursor</b>, entre outros. O conceito é o mesmo.</p>
+        <a class="btn" href="https://code.visualstudio.com/" target="_blank" rel="noopener">Baixar o VS Code →</a>
+      </div>
+      <div class="card">
+        <h3>Firecrawl</h3>
+        <p>Transforma qualquer site em dados limpos pra IA ler (texto e markdown). Serve pra pesquisar concorrentes, extrair informação de páginas e alimentar o Claude com conteúdo da web.</p>
+        <p class="alts"><b>Como usar no Claude Code:</b> crie a conta, pegue sua API key e adicione o Firecrawl como conexão (MCP). Depois é só pedir "pesquise…" ou "leia esse site" que o Claude navega e lê por você.</p>
+        <a class="btn" href="https://www.firecrawl.dev/" target="_blank" rel="noopener">Conhecer o Firecrawl →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMERCIAL -->
+<section id="comercial" class="alt">
+  <div class="wrap">
+    <div class="step">Skills · Comercial</div>
+    <h2>Proposta comercial</h2>
+    <p class="sectlead">A skill que gera uma proposta comercial profissional em PDF, pronta pra enviar pro cliente. Já vem dentro do framework, não precisa baixar nada à parte.</p>
+    <div class="grid g2">
+      <div class="card">
+        <span class="badge free">Proposta comercial</span>
+        <h3>Gera o PDF pronto</h3>
+        <p>Você passa os dados do cliente e o que vai oferecer; a skill monta a proposta inteira em PDF, já com identidade visual, escopo, valores e fechamento. Some o trabalho manual de diagramar proposta no zero.</p>
+        <p class="alts"><b>Como usar:</b> diga <code>faz uma proposta comercial para o cliente X</code> (ou "preciso de uma proposta de tráfego pago para…"). A skill entra sozinha, pergunta o que falta e gera o PDF.</p>
+        <p class="alts">📦 <b>Onde está:</b> já incluída no framework que você baixou na <a href="#framework">Parte 2</a>. É só pedir.</p>
+      </div>
+      <div class="card">
+        <h3>O que ela cobre</h3>
+        <p>Atende os formatos mais comuns do dia a dia da agência:</p>
+        <p class="alts">
+          <b>Simples</b> — um cliente, um escopo.<br>
+          <b>Dupla</b> — dois clientes/planos no mesmo documento pra comparação.<br>
+          <b>Multi-itens</b> — várias frentes num só PDF (ex: combos, pacotes, casings de evento).
+        </p>
+        <p class="alts">💡 <b>Dica:</b> adapte as cores, a fonte e o rodapé pra sua marca uma vez, e todas as próximas propostas já saem no seu padrão.</p>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="top">
+        <span>PROMPT · PROPOSTA COMERCIAL</span>
+        <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+      </div>
+      <pre>Faz uma proposta comercial de tráfego pago para o cliente [NOME].
+
+O que vou oferecer: gestão de Meta e Google Ads, criativos e relatório mensal. Investimento em mídia de R$ [VALOR]/mês e honorário da agência de R$ [VALOR]/mês.
+
+Monta o PDF no padrão da agência, com escopo, entregáveis, valores e fechamento.</pre>
+    </div>
+  </div>
+</section>
+
+<!-- ONBOARDING -->
+<section id="onboarding">
+  <div class="wrap">
+    <div class="step">Skills · Onboarding</div>
+    <h2>Onboarding de cliente</h2>
+    <p class="sectlead">A skill que estrutura o início do trabalho com um cliente novo: do zero ao contexto pronto.</p>
+    <div class="grid g2">
+      <div class="card">
+        <span class="badge free">/onboarding</span>
+        <h3>Onboarding</h3>
+        <p>Coleta as fontes públicas do cliente (site, Instagram, Google Meu Negócio), puxa as informações automaticamente e monta a pasta do cliente já com o contexto inicial preenchido.</p>
+        <p class="alts"><b>Como usar:</b> rode <code>/onboarding</code> (ou diga "fazer onboarding do cliente X"). Ele pergunta o nome e as fontes, e gera tudo sozinho.</p>
+        <a class="btn" href="https://drive.google.com/drive/folders/1EggZkJKxfjxNZe9mG5Al7qKLmESsemPI?usp=sharing" target="_blank" rel="noopener">⬇ Baixar as skills →</a>
+      </div>
+      <div class="card">
+        <h3>O que ele gera</h3>
+        <p>Três artefatos prontos na pasta do cliente, pra você refinar com o que aprender na operação:</p>
+        <p class="alts">
+          <b>contexto.md</b> — quem é o cliente, o que vende, oferta e diferenciais.<br>
+          <b>persona.md</b> — estudo de persona profundo (dores, desejos, objeções).<br>
+          <b>mercado.md</b> — estudo de mercado do segmento.
+        </p>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="top">
+        <span>PROMPT · ONBOARDING DE CLIENTE</span>
+        <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+      </div>
+      <pre>Faz o onboarding do cliente [NOME].
+
+https://www.instagram.com/subidoaovivo/
+https://lp.pedrosobral.com.br/
+
+Puxa as informações dessas fontes e monta a pasta do cliente com o contexto, o estudo de persona e o estudo de mercado.</pre>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPANHAS -->
+<section id="campanhas" class="alt">
+  <div class="wrap">
+    <div class="step">Skills · Campanhas</div>
+    <h2>Skills de campanha</h2>
+    <p class="sectlead">As skills que sobem e estruturam campanhas no Meta Ads, do público ao anúncio. Tudo criado PAUSED, pra você revisar antes de publicar.</p>
+    <div style="margin:1.6rem 0 .3rem">
+      <a class="btn" href="https://drive.google.com/drive/folders/1EggZkJKxfjxNZe9mG5Al7qKLmESsemPI?usp=sharing" target="_blank" rel="noopener">⬇ Baixar o pacote de skills →</a>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <span class="badge free">/campanha-trafego-perfil</span>
+        <h3>Tráfego para o perfil</h3>
+        <p>Cria uma campanha de tráfego pro perfil do Instagram: 1 vídeo, CTA "Ver perfil", no modelo validado. Mostra o template e pede OK antes de criar.</p>
+        <p class="alts"><b>Como usar:</b> <code>/campanha-trafego-perfil</code></p>
+        <div class="prompt" style="margin-top:.9rem">
+          <div class="top">
+            <span>EXEMPLO</span>
+            <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+          </div>
+          <pre>Cria uma campanha de tráfego pro perfil do Instagram do cliente Studio Aurora, com o vídeo dessa pasta, R$ 30/dia.</pre>
+        </div>
+      </div>
+      <div class="card">
+        <span class="badge free">/campanha-alcance</span>
+        <h3>Campanha de alcance</h3>
+        <p>Cria campanha de alcance com criativos pareados feed + story e o posicionamento certo pra cada formato. Gera vários anúncios de uma vez.</p>
+        <p class="alts"><b>Como usar:</b> <code>/campanha-alcance</code></p>
+        <div class="prompt" style="margin-top:.9rem">
+          <div class="top">
+            <span>EXEMPLO</span>
+            <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+          </div>
+          <pre>Sobe uma campanha de alcance pro cliente X com os criativos feed+story dessa pasta, em São Paulo raio 40 km, R$ 20/dia.</pre>
+        </div>
+      </div>
+      <div class="card">
+        <span class="badge free">/envio-criativos-novo</span>
+        <h3>Envio de criativos</h3>
+        <p>Sobe vários anúncios num conjunto que já existe, pareando Feed + Story e herdando legenda, link e CTA de um anúncio modelo.</p>
+        <p class="alts"><b>Como usar:</b> <code>/envio-criativos-novo</code></p>
+        <div class="prompt" style="margin-top:.9rem">
+          <div class="top">
+            <span>EXEMPLO</span>
+            <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+          </div>
+          <pre>Sobe os criativos 03, 04 e 05 dessa pasta no conjunto Y do cliente Z, herdando o anúncio modelo.</pre>
+        </div>
+      </div>
+      <div class="card">
+        <span class="badge free">/publicos-fb</span>
+        <h3>Públicos do Facebook</h3>
+        <p>Cria de uma vez os 9 públicos de engajamento da página do Facebook (de 3 a 365 dias), prontos pra remarketing.</p>
+        <p class="alts">⚠️ <b>Pré-requisito:</b> é preciso já ter um público modelo criado na conta, a skill usa ele pra pegar o ID da página.</p>
+        <p class="alts"><b>Como usar:</b> <code>/publicos-fb</code></p>
+        <div class="prompt" style="margin-top:.9rem">
+          <div class="top">
+            <span>EXEMPLO</span>
+            <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+          </div>
+          <pre>Cria os 9 públicos de engajamento do Facebook na conta do cliente X.</pre>
+        </div>
+      </div>
+      <div class="card">
+        <span class="badge free">/publicos-ig</span>
+        <h3>Públicos do Instagram</h3>
+        <p>Cria os públicos de engajamento do perfil do Instagram nas janelas padrão (3 a 365 dias) pra alimentar seus remarketings.</p>
+        <p class="alts">⚠️ <b>Pré-requisito:</b> é preciso já ter um público modelo criado na conta, a skill usa ele pra pegar o ID do perfil do Instagram.</p>
+        <p class="alts"><b>Como usar:</b> <code>/publicos-ig</code></p>
+        <div class="prompt" style="margin-top:.9rem">
+          <div class="top">
+            <span>EXEMPLO</span>
+            <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+          </div>
+          <pre>Cria os públicos de engajamento do Instagram (365, 90 e 30 dias) na conta do cliente X.</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATÓRIOS -->
+<section id="relatorios">
+  <div class="wrap">
+    <div class="step">Skills · Relatórios</div>
+    <h2>Relatórios e apresentações prontos</h2>
+    <p class="sectlead">O Claude lê os números direto das APIs do Meta e do Google e monta o relatório inteiro em HTML, no padrão visual da agência, pronto pra enviar. Some o trabalho de exportar planilha, montar slide e formatar tudo à mão.</p>
+    <div class="grid g3">
+      <div class="card">
+        <span class="badge free">Cliente final</span>
+        <h3>Relatório de impacto</h3>
+        <p>Linguagem simples, sem jargão de gestor: quantas pessoas a marca alcançou, quantas conversas e vendas chegaram e por qual custo. Ideal pra apresentar pro dono do negócio.</p>
+      </div>
+      <div class="card">
+        <span class="badge free">Gestão · comparativo</span>
+        <h3>Antes vs depois</h3>
+        <p>Compara dois períodos lado a lado (CPA, compras, eficiência) e mostra o que mudou depois da sua entrada, praça por praça. Perfeito pra provar resultado.</p>
+      </div>
+      <div class="card">
+        <span class="badge free">Consultoria de conta</span>
+        <h3>Diagnóstico e plano</h3>
+        <p>Diagnóstico de meses de operação (evolução, pontos fortes, vazamentos de funil) com um plano de próximos passos. Vira uma consultoria entregável.</p>
+      </div>
+    </div>
+
+    <div style="margin:1.8rem 0 .3rem">
+      <a class="btn" href="https://drive.google.com/drive/folders/1EggZkJKxfjxNZe9mG5Al7qKLmESsemPI?usp=sharing" target="_blank" rel="noopener">⬇ Baixar os relatórios de exemplo →</a>
+    </div>
+
+    <!-- prompt 1: cliente final -->
+    <div class="prompt">
+      <div class="top">
+        <span>PROMPT · RELATÓRIO PRO CLIENTE FINAL</span>
+        <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+      </div>
+      <pre>Preciso de um relatório de tráfego pago do cliente [NOME], dos últimos 60 dias.
+
+A apresentação é pra dona do negócio, então nada de métrica de gestor: quero o impacto pra ela. Traga investimento, conversas iniciadas, custo por conversa, alcance e as campanhas que mais venderam. Informe também quais campanhas foram pausadas.
+
+Monte em HTML, no padrão visual da agência, pronto pra enviar.</pre>
+    </div>
+
+    <!-- prompt 2: comparativo -->
+    <div class="prompt" style="margin-top:1.4rem">
+      <div class="top">
+        <span>PROMPT · COMPARATIVO ANTES vs DEPOIS</span>
+        <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+      </div>
+      <pre>Monte um relatório de gestão do cliente [NOME] comparando dois períodos de mesma duração: os 56 dias antes da nossa entrada e os 56 dias depois.
+
+Puxe da API do Meta as campanhas com objetivo de Vendas e compare CPA, número de compras e investimento entre os dois períodos. Liste as cidades que melhoraram, as que estão estáveis e as novas praças que abrimos. Resuma no topo, em uma frase, o que mudou.
+
+Saída em HTML no padrão da agência.</pre>
+    </div>
+
+    <!-- prompt 3: consultoria -->
+    <div class="prompt" style="margin-top:1.4rem">
+      <div class="top">
+        <span>PROMPT · CONSULTORIA DE CONTA</span>
+        <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+      </div>
+      <pre>Faça um diagnóstico completo da conta de Meta Ads do cliente [NOME], cobrindo os últimos meses de operação.
+
+Quero a evolução de investimento, receita e ROAS mês a mês, os pontos fortes e os vazamentos do funil, e um recorte do gasto que sai pra fora do site (sem retorno mensurável no pixel). Feche com um plano de próximos passos priorizado pra escalar com eficiência.
+
+Entregue em HTML no padrão visual da agência.</pre>
+    </div>
+  </div>
+</section>
+
+<!-- ANÁLISE DE CONCORRENTES -->
+<section id="analise" class="alt">
+  <div class="wrap">
+    <div class="step">Campanhas e criativos</div>
+    <h2>Análise de concorrentes</h2>
+    <p class="sectlead">Uma skill pra estudar os anúncios dos concorrentes e entender o que está funcionando antes de criar os seus.</p>
+    <div class="grid g2">
+      <div class="card">
+        <span class="badge free">Marketing · criativo</span>
+        <h3>competitive-ads-extractor</h3>
+        <p><b>Pra que serve:</b> extrai e analisa os anúncios dos concorrentes nas bibliotecas de anúncios (como a Biblioteca de Anúncios do Meta) pra você entender os ângulos, promessas e formatos de criativo que estão dando resultado.</p>
+        <p class="alts"><b>Como baixar:</b> pegue a pasta da skill no repositório awesome-claude-skills e coloque na sua pasta de skills do Claude (<code>~/.claude/skills/</code>).</p>
+        <p class="alts"><b>Como usar:</b> chame a skill pelo nome (<code>competitive-ads-extractor</code>) ou por frases como "analisar anúncios do concorrente". Use o prompt ao lado como ponto de partida.</p>
+        <a class="btn" href="https://github.com/ComposioHQ/awesome-claude-skills/tree/master/competitive-ads-extractor" target="_blank" rel="noopener">Baixar no GitHub →</a>
+      </div>
+      <div class="card" style="background:transparent;box-shadow:none;padding:0;justify-content:center">
+        <div class="prompt" style="margin-top:0">
+          <div class="top">
+            <span>PROMPT · RAIO-X DE CONCORRENTE</span>
+            <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+          </div>
+          <pre>Use a competitive-ads-extractor para analisar os anúncios ativos do concorrente [NOME ou link da Biblioteca de Anúncios do Meta].
+
+Quero um raio-x detalhado com:
+1. Os principais ângulos e promessas que eles usam.
+2. O tipo de criativo predominante (vídeo, imagem, carrossel) e o formato.
+3. Os gatilhos de copy, headlines e CTAs mais usados.
+4. Quais anúncios estão rodando há mais tempo (provável vencedor).
+
+No fim, liste os padrões que eu posso testar nas minhas próprias campanhas.</pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GESTÃO DA EQUIPE -->
+<section id="gestao">
+  <div class="wrap">
+    <div class="step">Gestão e operação</div>
+    <h2>Carga real da equipe</h2>
+    <p class="sectlead">Um levantamento que responde, com número em vez de achismo, quem está sobrecarregado, quem tem folga e qual cliente mudar de mão. Não é uma skill pronta pra baixar: é o passo a passo pra você reproduzir isso na sua agência com o Claude Code.</p>
+    <div class="grid g2" style="margin-top:1.6rem">
+      <div class="card">
+        <span class="badge free">Gestão · dados</span>
+        <h3>Levantamento de carga da equipe</h3>
+        <p><b>Pra que serve:</b> o Gerenciador mostra resultado (gasto, ROAS, CPA), mas não mostra <b>trabalho</b>. Esse levantamento lê o registro de atividades da Meta (o activity log) de cada conta e transforma "acho que o Fulano está sobrecarregado" em "o Fulano responde por 32% da carga da equipe".</p>
+        <p class="alts"><b>O que entrega:</b> um relatório HTML com a carga por gestor, a matriz cliente × gestor e uma simulação de redistribuição, pra decidir quem move qual cliente sem precisar contratar ninguém.</p>
+        <p class="alts"><b>O que você precisa:</b> Claude Code e seu token da Meta no <code>.env</code>. Roda em cima do activity log da conta, sem ferramenta paga.</p>
+        <a class="btn" href="https://drive.google.com/drive/folders/11ixXXQPqoqjU9c_QnYQDYZgIoqe5k8S9?usp=sharing" target="_blank" rel="noopener">⬇ Baixar o relatório de exemplo e o guia →</a>
+      </div>
+      <div class="card">
+        <h3>Como usar</h3>
+        <ol style="margin:.7rem 0 0 1.1rem;color:var(--inkv);font-size:.95rem;line-height:1.55">
+          <li>Abra o Claude Code na pasta do seu projeto, com o <code>.env</code> configurado com o token da Meta.</li>
+          <li>Cole o prompt ao lado, trocando os nomes da sua equipe e a lista de clientes por gestor.</li>
+          <li>Quando ele listar todos os atores, classifique quem é da equipe e quem é de fora (vão aparecer nomes que você não reconhece, e às vezes a mesma pessoa em dois perfis).</li>
+          <li>Ajuste os pesos por tipo de ação <b>junto com o time</b>. Trocar imagem, por exemplo, pesa bem mais do que pausar um anúncio, e isso muda a conclusão.</li>
+          <li>Leia o relatório e decida as movimentações de cliente.</li>
+        </ol>
+        <p class="alts" style="margin-top:1rem">⚠️ É dado de gestão de pessoas: não commite a pasta e apresente <b>com</b> a pessoa na sala, não sobre ela. O número mostra volume, não qualidade nem dificuldade.</p>
+      </div>
+    </div>
+
+    <!-- prompt gestão -->
+    <div class="prompt" style="margin-top:1.4rem">
+      <div class="top">
+        <span>PROMPT · CARGA DA EQUIPE</span>
+        <button class="copybtn" onclick="copyPrompt(this)">Copiar</button>
+      </div>
+      <pre>Quero medir a carga de trabalho real da minha equipe de tráfego pago usando o activity log da Meta Marketing API (/act_&lt;id&gt;/activities), numa janela de 45 dias.
+
+Minha equipe: [nomes]
+Meus clientes e quem cuida de cada um: [lista cliente -> gestor]
+
+Crie uma pasta gestao/ (adicione ao .gitignore, tem dado por pessoa) com:
+1. Um coletor que baixe o log conta a conta, com cache por conta, pausa entre contas e tratamento de rate limit, pra rodar em lotes sem estourar a API.
+2. Um agregador separado, que rode só sobre o cache, aplique os filtros e os pesos.
+3. Um gerador de relatório HTML com gráfico de carga por gestor, matriz cliente x gestor e simulação de redistribuição.
+
+Atenção a estas armadilhas, todas verificadas na prática:
+- until é EXCLUSIVO no endpoint activities
+- actor_id "0" é a própria Meta, não conta como trabalho
+- update_ad_run_status vem com nome de pessoa mas na maioria é a esteira de revisão da Meta; só conta quando alguém de fato desligou algo ou religou o que estava desligado
+- a mesma pessoa pode ter vários actor_id, chaveie por actor_id, nunca por nome
+- extra_data.campaign_id é o id do CONJUNTO, não da campanha
+
+Antes de fechar os números, me mostre a lista de todos os atores encontrados pra eu classificar quem é da equipe e quem é de fora.</pre>
+    </div>
+  </div>
+</section>
+
+<!-- SISTEMAS -->
+<section id="sistemas" class="alt">
+  <div class="wrap">
+    <div class="step">Sistemas</div>
+    <h2>Três sistemas completos pra você baixar</h2>
+    <p class="sectlead">Além das skills, você leva três sistemas reais da agência, construídos do zero com o Claude Code. Eles vão <b>com o código-fonte e as instruções de instalação dentro de cada pasta</b> — todos sem nenhum dado real (contas, tokens e senhas removidos). Comece pelo mais simples e evolua a partir dele.</p>
+
+    <div style="margin:1.8rem 0 .3rem">
+      <a class="btn" href="https://drive.google.com/drive/folders/1EggZkJKxfjxNZe9mG5Al7qKLmESsemPI?usp=sharing" target="_blank" rel="noopener">⬇ Baixar os três sistemas →</a>
+    </div>
+
+    <div class="grid g3">
+      <div class="card">
+        <span class="badge free">✅ Comece por aqui · fácil</span>
+        <h3>1. FB Ad Library Downloader</h3>
+        <p>Uma extensão do Google Chrome que coloca um botão de <b>download</b> em cada vídeo e imagem da Biblioteca de Anúncios do Meta. Serve pra você salvar criativos de concorrentes e montar seu swipe file.</p>
+        <p class="alts"><b>Por que é o mais simples:</b> não precisa de servidor nem configuração. Você instala como extensão no Chrome e já está usando — leva 1 minuto.</p>
+        <p class="alts">📦 <b>Como instalar:</b> o passo a passo completo está no arquivo <code>COMO-INSTALAR.md</code> dentro da pasta.</p>
+      </div>
+      <div class="card">
+        <span class="badge lock">⚙️ Requer mais conhecimento</span>
+        <h3>2. Dashboard de Tráfego Pago</h3>
+        <p>Um painel web que lê várias contas da Meta de uma vez, agrupa por gestor e mostra <b>investimento, custo por resultado e status de cada conta em tempo real</b>. Vai como base genérica (Cliente ABC) pra você adaptar à sua operação.</p>
+        <p class="alts"><b>O que envolve:</b> rodar um projeto Next.js, ter um banco de dados e subir num servidor (Railway). É mais técnico, mas todo o passo a passo está pronto.</p>
+        <p class="alts">📦 <b>Como subir:</b> arquitetura e deploy explicados no arquivo <code>PASSO-A-PASSO.md</code>.</p>
+      </div>
+      <div class="card">
+        <span class="badge lock">⚙️ Requer mais conhecimento</span>
+        <h3>3. Notifiquei · relatórios no WhatsApp</h3>
+        <p>O sistema que <b>envia conforme programação configurável o relatório de Meta Ads e Google de cada cliente no grupo de WhatsApp dele</b> — no horário marcado, com os dados do dia anterior ou conforme configuração, sem trabalho manual.</p>
+        <p class="alts"><b>O que envolve:</b> é o mais completo dos três (painel + worker + banco + gateway de WhatsApp). Pede mais ambientação, mas o código-fonte vai inteiro.</p>
+        <p class="alts">📦 <b>Como subir:</b> arquitetura e deploy no arquivo <code>COMO-FOI-FEITO-E-DEPLOY.md</code>.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="ttl">⚠️ Importante antes de mexer no Dashboard e no Notifiquei</div>
+      <p style="max-width:none">O FB Downloader é plug and play. Já o <b>Dashboard</b> e o <b>Notifiquei</b> são sistemas mais robustos: exigem um pouco mais de conhecimento técnico (rodar projeto, banco de dados, servidor) e <b>podem apresentar erros</b> dependendo do seu ambiente — isso é normal. A boa notícia: <b>todo o código usado e as instruções de instalação estão dentro dos próprios arquivos</b>. Em caso de erro, abra os arquivos no Claude Code e peça pra ele te ajudar a entender e corrigir — foi assim que eles foram construídos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN SKILLS -->
+<section id="design">
+  <div class="wrap">
+    <div class="step">Skills</div>
+    <h2>Skills de design</h2>
+    <p class="sectlead">Duas skills que elevam o resultado visual quando você pede pro Claude criar sites, landing pages, dashboards ou apresentações.</p>
+    <div class="grid g2">
+      <div class="card">
+        <span class="badge free">Design · UX</span>
+        <h3>UI/UX Pro Max</h3>
+        <p>Ensina a IA a criar interfaces bonitas e fáceis de usar, com boas práticas de UX, paletas, tipografia e padrões de tela. Em vez de algo "genérico de IA", você ganha hierarquia, espaçamento e acabamento profissional. <b>Este próprio site foi feito seguindo os princípios dela.</b></p>
+        <p class="alts"><b>Como usar:</b> é só pedir "use a ui-ux-pro-max para criar/revisar…". Ela entra sozinha quando você fala em criar ou melhorar telas.</p>
+        <a class="btn" href="https://www.uupm.cc/" target="_blank" rel="noopener">Site oficial →</a>
+        <a class="btn ghost" href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank" rel="noopener" style="margin-top:.7rem">Repositório no GitHub →</a>
+      </div>
+      <div class="card">
+        <span class="badge free">Design · código pronto</span>
+        <h3>Impeccable</h3>
+        <p>Skill de design focada em entregar interface de nível profissional, com código pronto pra produção (não protótipo). Cuida de hierarquia visual, tipografia, cor, motion, acessibilidade e até design system. Tem comandos como <b>craft</b>, <b>audit</b>, <b>polish</b> e <b>animate</b> pra criar do zero ou refinar o que já existe.</p>
+        <p class="alts"><b>Como usar:</b> invoque a skill com um comando, ex.: "impeccable polish nessa página" pra refinar, ou "impeccable audit" pra revisar o design de uma tela.</p>
+        <a class="btn" href="https://impeccable.style/" target="_blank" rel="noopener">Site oficial →</a>
+        <a class="btn ghost" href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener" style="margin-top:.7rem">Repositório no GitHub →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEO -->
+<section id="seo" class="alt">
+  <div class="wrap">
+    <div class="step">Skills · SEO</div>
+    <h2>SEO e palavras-chave</h2>
+    <p class="sectlead">Pra quem trabalha com Google: análise de SEO completa e dados reais de busca (volume, CPC e concorrência) antes de decidir onde investir.</p>
+    <div class="grid g2">
+      <div class="card">
+        <span class="badge free">/seo</span>
+        <h3>Claude SEO</h3>
+        <p>Suíte completa de SEO: auditoria do site inteiro, análise de página, SEO técnico (Core Web Vitals), schema, qualidade de conteúdo (E-E-A-T), sitemap e GEO (aparecer nas respostas de IA, tipo AI Overviews e ChatGPT). Orquestra mais de 20 sub-skills.</p>
+        <p class="alts"><b>Como usar:</b> <code>/seo audit site.com.br</code> (auditoria completa) ou <code>/seo page site.com.br/pagina</code> (uma página só).</p>
+        <a class="btn" href="https://claude-seo.md/" target="_blank" rel="noopener">Site oficial →</a>
+        <a class="btn ghost" href="https://github.com/AgricIDaniel/claude-seo" target="_blank" rel="noopener" style="margin-top:.7rem">Repositório no GitHub →</a>
+      </div>
+      <div class="card">
+        <span class="badge free">Dados ao vivo</span>
+        <h3>DataForSEO</h3>
+        <p>API que entrega dados reais do Google: volume de busca, custo por clique (CPC), nível de concorrência, dificuldade de palavra-chave, SERP e backlinks. Serve pra descobrir o CPC de um nicho/cidade <b>antes</b> de subir a campanha.</p>
+        <p class="alts">É uma extensão do Claude SEO. Cobra por consulta (por chamada de API), mas é barato pra pesquisa pontual.</p>
+        <a class="btn" href="https://dataforseo.com/?aff=264227" target="_blank" rel="noopener">Criar conta →</a>
+      </div>
+    </div>
+
+    <!-- prompt claude-seo -->
+    <div class="prompt">
+      <div class="top"><span>PROMPT · AUDITORIA DE SEO</span><button class="copybtn" onclick="copyPrompt(this)">Copiar</button></div>
+      <pre>Faça uma auditoria de SEO do site [https://site-do-cliente.com.br].
+
+Quero saber:
+1. Os principais problemas técnicos que travam o ranqueamento.
+2. A qualidade do conteúdo e o que falta pra ranquear melhor.
+3. As oportunidades de palavra-chave mais fáceis de atacar primeiro.
+
+Priorize por impacto e me diga o que corrigir primeiro.</pre>
+    </div>
+
+    <!-- conta + .env / prompt dataforseo -->
+    <div class="grid g2" style="margin-top:1.6rem">
+      <div class="card">
+        <h3>Como conectar o DataForSEO</h3>
+        <ol style="margin:.7rem 0 0 1.1rem;color:var(--inkv);font-size:.95rem;line-height:1.55">
+          <li>Crie a conta em <a href="https://dataforseo.com/?aff=264227" target="_blank" rel="noopener">dataforseo.com</a> (tem crédito inicial pra testar).</li>
+          <li>No painel, em <b>API Access</b>, copie suas credenciais (login + senha) ou o <b>token Basic</b> já pronto.</li>
+          <li>No arquivo <code>.env</code> do seu projeto, adicione a linha: <code>DATAFORSEO_TOKEN=seu_token</code>.</li>
+          <li>Pronto. É só pedir pro Claude, que ele lê a credencial do <code>.env</code> sozinho.</li>
+        </ol>
+      </div>
+      <div class="card" style="background:transparent;box-shadow:none;padding:0;justify-content:center">
+        <div class="prompt" style="margin-top:0">
+          <div class="top"><span>PROMPT · CPC DE UM NICHO</span><button class="copybtn" onclick="copyPrompt(this)">Copiar</button></div>
+          <pre>Pesquise no DataForSEO as palavras-chave "[seu serviço] em [sua cidade]".
+
+Me traga o volume de busca, o custo por clique (CPC) e o nível de concorrência. No fim, diga se vale a pena anunciar e qual teto de CPC usar.</pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- exemplo real -->
+    <div class="card" style="margin-top:1.6rem">
+      <span class="badge lock">Exemplo real · advogado trabalhista em Palmas/TO</span>
+      <h3>O que o DataForSEO devolveu</h3>
+      <p style="flex:none">Pesquisa real feita pra avaliar a viabilidade de um nicho jurídico em Palmas. Resultados no Brasil, CPC em reais:</p>
+      <table class="dftable">
+        <thead><tr><th>Palavra-chave</th><th class="num">Buscas/mês</th><th class="num">CPC (R$)</th><th>Concorrência</th></tr></thead>
+        <tbody>
+          <tr><td>advogado trabalhista em palmas</td><td class="num">210</td><td class="num">2,76</td><td>Alta</td></tr>
+          <tr><td>advogado em palmas</td><td class="num">480</td><td class="num">0,77</td><td>Média</td></tr>
+          <tr><td>advogado trabalhista perto de mim</td><td class="num">1.900</td><td class="num">2,18</td><td>Alta</td></tr>
+          <tr><td>cartório palmas</td><td class="num">1.600</td><td class="num">0,60</td><td>Baixa</td></tr>
+          <tr><td>aluguel palmas</td><td class="num">2.400</td><td class="num">0,17</td><td>Média</td></tr>
+          <tr><td>vagas de emprego palmas</td><td class="num">2.900</td><td class="num">0,11</td><td>Baixa</td></tr>
+        </tbody>
+      </table>
+      <p class="alts"><b>Leitura:</b> CPC de ~R$ 2,76 com concorrência alta, mas volume baixo (210 buscas/mês). Dá pra anunciar com teto de CPC perto de R$ 3 e foco em Palmas + 30 km, sem queimar verba.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="tese">Tudo que é repetitivo pode ser automatizado.</p>
+  <p class="sig">Cássio Prado</p>
+</footer>
+
+<script src="js/main-index.js"></script>
+</body>
+</html>
