@@ -688,6 +688,101 @@
                 </div>
             </div>
 
+            
+            <!-- PARTE 1: Diagrama (Mobile Only) -->
+            <div class="relative w-full mx-auto py-10 block md:hidden mb-16">
+                
+                <!-- DUX Top -->
+                <div class="flex flex-col items-center justify-center relative z-20 mb-8">
+                    <div class="absolute inset-0 bg-primary/20 rounded-full blur-[40px] -z-10"></div>
+                    <div class="w-20 h-20 rounded-[20px] bg-[#0a0a0a] border border-primary/40 shadow-[0_0_30px_rgba(249,115,22,0.35)] flex items-center justify-center relative overflow-hidden">
+                        <img src="img/logo-dux-novo.webp" class="w-12 object-contain" alt="Dux">
+                    </div>
+                    <span class="font-bold text-white tracking-widest text-xs uppercase mt-3">DUX</span>
+                </div>
+
+                <!-- Tree structure -->
+                <div class="relative w-full px-2">
+                    <!-- Linha central vertical -->
+                    <div class="absolute left-1/2 top-0 bottom-0 w-[1px] -translate-x-1/2" style="background-image: linear-gradient(to bottom, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 1px 10px; background-repeat: repeat-y;"></div>
+                    
+                    <!-- Linha de energia descendo -->
+                    <div class="absolute left-1/2 top-0 bottom-0 w-[1px] -translate-x-1/2 overflow-hidden">
+                        <div class="w-full h-[100px] bg-gradient-to-b from-transparent via-primary to-transparent animate-[flowDown_3s_linear_infinite]"></div>
+                    </div>
+
+                    <style>
+                        @keyframes flowDown {
+                            0% { transform: translateY(-100px); }
+                            100% { transform: translateY(800px); }
+                        }
+                    </style>
+
+                    <div class="grid grid-cols-2 gap-y-10 gap-x-0 relative z-10">
+                        
+                        <!-- Row 1 -->
+                        <div class="flex flex-col items-center text-center relative pr-4">
+                            <div class="absolute right-0 top-6 w-full h-[1px]" style="background-image: linear-gradient(to right, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 10px 1px;"></div>
+                            <div class="w-12 h-12 rounded-2xl bg-glass shadow-card border border-glassBorder flex items-center justify-center text-primary text-lg relative z-10 mb-2 bg-[#0a0a0a]"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <span class="node-label font-mono text-[9px] uppercase tracking-widest text-faint">DIAGNÓSTICO</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center relative pl-4">
+                            <div class="absolute left-0 top-6 w-full h-[1px]" style="background-image: linear-gradient(to right, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 10px 1px;"></div>
+                            <div class="w-12 h-12 rounded-2xl bg-glass shadow-card border border-glassBorder flex items-center justify-center text-primary text-lg relative z-10 mb-2 bg-[#0a0a0a]"><i class="fa-solid fa-bullhorn"></i></div>
+                            <span class="node-label font-mono text-[9px] uppercase tracking-widest text-faint">TRÁFEGO PAGO</span>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="flex flex-col items-center text-center relative pr-4">
+                            <div class="absolute right-0 top-6 w-full h-[1px]" style="background-image: linear-gradient(to right, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 10px 1px;"></div>
+                            <div class="w-12 h-12 rounded-2xl bg-glass shadow-card border border-glassBorder flex items-center justify-center text-primary text-lg relative z-10 mb-2 bg-[#0a0a0a]"><i class="fa-solid fa-location-dot"></i></div>
+                            <span class="node-label font-mono text-[9px] uppercase tracking-widest text-faint">MEU NEGÓCIO</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center relative pl-4">
+                            <div class="absolute left-0 top-6 w-full h-[1px]" style="background-image: linear-gradient(to right, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 10px 1px;"></div>
+                            <div class="w-12 h-12 rounded-2xl bg-glass shadow-card border border-glassBorder flex items-center justify-center text-primary text-lg relative z-10 mb-2 bg-[#0a0a0a]"><i class="fa-solid fa-utensils"></i></div>
+                            <span class="node-label font-mono text-[9px] uppercase tracking-widest text-faint">CARDÁPIO DIGITAL</span>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="flex flex-col items-center text-center relative pr-4">
+                            <div class="absolute right-0 top-6 w-full h-[1px]" style="background-image: linear-gradient(to right, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 10px 1px;"></div>
+                            <div class="w-12 h-12 rounded-2xl bg-glass shadow-card border border-glassBorder flex items-center justify-center text-primary text-lg relative z-10 mb-2 bg-[#0a0a0a]"><i class="fa-solid fa-layer-group"></i></div>
+                            <span class="node-label font-mono text-[9px] uppercase tracking-widest text-faint">ENGENHARIA</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center relative pl-4">
+                            <div class="absolute left-0 top-6 w-full h-[1px]" style="background-image: linear-gradient(to right, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 10px 1px;"></div>
+                            <div class="w-12 h-12 rounded-2xl bg-glass shadow-card border border-glassBorder flex items-center justify-center text-primary text-lg relative z-10 mb-2 bg-[#0a0a0a]"><i class="fa-solid fa-plus"></i></div>
+                            <span class="node-label font-mono text-[9px] uppercase tracking-widest text-faint">COMBOS</span>
+                        </div>
+
+                        <!-- Row 4 -->
+                        <div class="flex flex-col items-center text-center relative pr-4">
+                            <div class="absolute right-0 top-6 w-full h-[1px]" style="background-image: linear-gradient(to right, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 10px 1px;"></div>
+                            <div class="w-12 h-12 rounded-2xl bg-glass shadow-card border border-glassBorder flex items-center justify-center text-primary text-lg relative z-10 mb-2 bg-[#0a0a0a]"><i class="fa-solid fa-crosshairs"></i></div>
+                            <span class="node-label font-mono text-[9px] uppercase tracking-widest text-faint">REMARKETING</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center relative pl-4">
+                            <div class="absolute left-0 top-6 w-full h-[1px]" style="background-image: linear-gradient(to right, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 10px 1px;"></div>
+                            <div class="w-12 h-12 rounded-2xl bg-glass shadow-card border border-glassBorder flex items-center justify-center text-primary text-lg relative z-10 mb-2 bg-[#0a0a0a]"><i class="fa-solid fa-star"></i></div>
+                            <span class="node-label font-mono text-[9px] uppercase tracking-widest text-faint">FIDELIZAÇÃO</span>
+                        </div>
+
+                        <!-- Row 5 -->
+                        <div class="flex flex-col items-center text-center relative pr-4">
+                            <div class="absolute right-0 top-6 w-full h-[1px]" style="background-image: linear-gradient(to right, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 10px 1px;"></div>
+                            <div class="w-12 h-12 rounded-2xl bg-glass shadow-card border border-glassBorder flex items-center justify-center text-primary text-lg relative z-10 mb-2 bg-[#0a0a0a]"><i class="fa-brands fa-whatsapp"></i></div>
+                            <span class="node-label font-mono text-[9px] uppercase tracking-widest text-faint">GRUPO VIP</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center relative pl-4">
+                            <div class="absolute left-0 top-6 w-full h-[1px]" style="background-image: linear-gradient(to right, rgba(249,115,22,0.3) 50%, transparent 50%); background-size: 10px 1px;"></div>
+                            <div class="w-12 h-12 rounded-2xl bg-glass shadow-card border border-glassBorder flex items-center justify-center text-primary text-lg relative z-10 mb-2 bg-[#0a0a0a]"><i class="fa-solid fa-chart-simple"></i></div>
+                            <span class="node-label font-mono text-[9px] uppercase tracking-widest text-faint">RELATÓRIOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- PARTE 2: Abas + Grid detalhado -->
             
             <!-- Abas FOME -->
